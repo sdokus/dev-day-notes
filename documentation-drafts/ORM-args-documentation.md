@@ -43,7 +43,7 @@ This document provides a list of acceptable arguments and their descriptions for
 - Type: String
 - Description: The event post status. 
 - Options: 'publish', 'draft', or 'pending'
-- Example: 'status' => 'publish
+- Example: 'status' => 'publish'
 
 #### 'title'
 - Type: String
@@ -189,7 +189,7 @@ This document provides a list of acceptable arguments and their descriptions for
 
 ```php
 $args  = [
-    'title'                     => 'A test event',
+    'title'                     +=> 'A test event',
     'start_date'                => '2023-01-01 09:00:00',
     'end_date'                  => '2023-01-01 11:00:00',
     'all_day'                   => 0,
