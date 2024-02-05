@@ -6,6 +6,7 @@
 ### Locations
 The `Tribe__Context` class maintains a list of registered context locations, each associated with a specific data field or functionality. All of these locations can be read (return the data associated with them) and some of the location can be written (change the data associated with them)
 
+Baseline TEC & ET Locations:
 - `post_id`: Retrieves the ID of the current post (if available).
 - `permalink_structure`: Retrieves the permalink structure option from the WordPress settings.
 - `plain_permalink`: Checks if the permalink structure is empty to determine if it's a plain permalink.
@@ -20,5 +21,43 @@ The `Tribe__Context` class maintains a list of registered context locations, eac
 - `post_tag`: Reads and writes the current post tag (or tag taxonomy) from and to various sources.
 - `bulk_edit`: Reads if the current request is for a bulk edit action.
 - `inline_save`: Checks if the current request is for an inline post save action.
+- `event_display`
+- `view`
+- `view_data`
+- `event_date`
+- `event_sequence`
+- `ical`
+- `start_date`
+- `end_date`
+- `featured`
+- `tribe_events_cat`
+- `remove_date_filters`
+- `event_display_mode`
+- `tribe_event_display`
+- `keyword`
+- `events_per_page`
+- `month_posts_per_page`
+- `now`
+- `start_of_week`
+- `tec_post_type`
+- `event_post_type`
+- `venue_post_type`
+- `organizer_post_type`
+- `event_category`
+- `view_url`
+- `view_prev_url`
+- `view_request`
+- `earliest_event_date`
+- `shortcode`
 
+ECP Locations:
+- `hide_subsequent_recurrences`: Controls the visibility of subsequent recurrences in the context.
+- `geoloc_search`: Manages the geolocation search in the context.
+- `geoloc_lat`: Reads and writes the latitude for geolocation in the context.
+- `geoloc_lng`: Reads and writes the longitude for geolocation in the context.
+- `event_manager`: Determines if the current context is related to the event manager.
 
+- `event_manager`
+- `related_series`
+- `tec_organizer_category`
+- `tec_venue_category`
