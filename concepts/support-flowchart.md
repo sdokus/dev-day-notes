@@ -10,7 +10,7 @@ graph TD
     C[Does the issue persist with only TEC plugins and a default theme?]
     D[Ask the customer to clarify]
     D -->|Only move on once we have a clear 
-    understanding of the issue|C
+    understanding of the issue|B
     C -->|Yes|E
     C -->|No|F
     E[Can you recreate the unintended behavior on a sandbox?]
@@ -30,8 +30,9 @@ graph TD
     N --> G
     J[Is the issue only happening on one instance
     - i.e. a single event or single ticket?]
-    J --> |Yes| K
     J --> |No| I
+    J --> |Yes| K
+    
     K[Most likely corrupt data]
     
 style A fill:#6FBF56,stroke:#ffffff,stroke-width:2px;
