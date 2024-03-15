@@ -3,5 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/concepts" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/concepts/sdokus-dev-day-concepts" vcs="Git" />
   </component>
 </project>
