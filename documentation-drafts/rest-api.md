@@ -24,6 +24,7 @@ Let's break this down further.
 [your-site-URL]/ - this is the part of the request asking where we want to get information from (AKA which server)
 
 /wp-json/tribe/events/v1 - this indicates that we want information from TEC events in a JSON format
+    The wp-json actually is part of WP Core REST API (https://developer.wordpress.org/rest-api/key-concepts/#routes-endpoints)
 
 /{endpoint} - this part is what we are asking about
 
