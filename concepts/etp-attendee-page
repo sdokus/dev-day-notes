@@ -1,0 +1,31 @@
+# Event Tickets Plus Attendee Page Broken Down
+
+This is the process that happens "under the hood" to calculate the numbers on the Attendee Summary Page:
+
+`calculate_totals()`
+1. Grabs all tickets for the given event
+2. Loops through each ticket and:
+    - Checks if it should be counted (by default, all tickets should be counted except for RSVPs)
+    - Grabs from the current ticket object and adds them to the totals for the given event:
+        - total paid
+        - total pending
+        - total cancelled
+        - total refunded
+
+`print_totals()`
+Outputs the HTML that is the table we see on the Attendees Page.
+This uses different methods than the ones in the Ticket Object.
+
+sold = paid + pending
+complete = paid + cancelled + refunded
+
+issued = $ticket_totals[**sold**, available]
+
+## Notes
+
+### Situation 1: Ordered 5 tickets, meant to only order 2
+    Need to go to Attendees Page and delete three of the 5 pending attendees to delete
+    Need to ALSO go to WC order and edit the quantity from 5 to 2. Even though the attendees show as deleted in the order details, the quantity was still showing at 5
+
+### Situation 2: Two tickets share capacity
+
