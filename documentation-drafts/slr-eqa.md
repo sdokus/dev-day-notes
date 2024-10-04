@@ -14,16 +14,16 @@
 (Also found this [Alpha Version Demo](https://drive.google.com/file/d/13tQe_l7Ua_NkFFkzjPXcszzHg4gkEYQY/view?t=2) which was helpful for orienting to what is expected or not)
 
 ## Phase 2 - Explore SLR 
-- :check: Submit a couple of events through CE: 1 with tickets and one without
-- :check: Add new seating map and seat layout
-- :check: Add event with block editor and seat layout tickets
-- :check: Simulate checking out seats as an admin 
+- :white_check_mark: Submit a couple of events through CE: 1 with tickets and one without
+- :white_check_mark: Add new seating map and seat layout
+- :white_check_mark: Add event with block editor and seat layout tickets
+- :white_check_mark: Simulate checking out seats as an admin 
   - Potential issue where admin email overrides purchaser email on success screen - this exists in non-SLR zips too (pre-existing)
-- :check: Simulate checking out seats in incognito window
+- :white_check_mark: Simulate checking out seats in incognito window
 - :x: Add event with classic editor (not available bc of Classic Editor)
 - :x: Submit CE event with ticket (not available bc of Classic Editor)
 - :x: Add recurring event with the block editor with seat layout tickets (not available bc of Classic Editor)
-- :ladybug: Duplicate an event with existing seat layout ticket
+- :beetle: Duplicate an event with existing seat layout ticket
   - Seat layout tickets duplicated - one with original event's capacity and one with "fresh" capacities
   - On save, seat layout tickets converted to "regular" tickets and capacity changed to 0 available on backend, shows as "unlimited" on frontend
 - Deleting Attendees
