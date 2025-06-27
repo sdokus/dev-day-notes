@@ -9,8 +9,11 @@
 5. Using the Slack bot run `bot deploy seating routes-local-development to staging`
 6. Head over to the `Tickets > __TEST__ Setup` section and set the “Service Backend URL” and “Service Frontend URL” to Staging. 
 7. Set up Tickets Commerce with Stripe.
+
 (Found the formal instructions for testing [here](https://docs.google.com/document/d/1DiWKWqeE-4ca0rrpW26qzoktB62UkRUZqihTUhV75Z4/edit?usp=sharing))
+
 (Also able to just use this link to auto-create sandbox: https://app.instawp.io/launch?t=slr-testing-site&d=v2)
+
 (Also found this [Alpha Version Demo](https://drive.google.com/file/d/13tQe_l7Ua_NkFFkzjPXcszzHg4gkEYQY/view?t=2) which was helpful for orienting to what is expected or not)
 
 ## Phase 2 - Explore SLR 
@@ -27,6 +30,13 @@
   - Seat layout tickets duplicated - one with original event's capacity and one with "fresh" capacities
   - On save, seat layout tickets converted to "regular" tickets and capacity changed to 0 available on backend, shows as "unlimited" on frontend
   - Already reported in spreadsheet
+- :white_check_mark: Activating WooCommerce and then resubmitting an event with tickets
+  - Having both TC and WC activated defaults to TC being the ticket handler with CE submitted tickets with no option to switch this while submitting a ticket. 
+- On CE event:
+  - :white_check_mark: Manually add attendee 
+  - :white_check_mark: Move attendee to ticket on same event
+  - :x: Attempting to access "Seats" tab on CE event with tickets - shows "Something went wrong with the Seat Layout tool. Try again or go to our knowledge base for troubleshooting help."
+  - 
 - Deleting Attendees
 - Moving Attendees' seats
 - 
