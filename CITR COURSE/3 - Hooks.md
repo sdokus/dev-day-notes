@@ -12,7 +12,7 @@ Two way data binding is not free in React.
 
 A hook is a special function in React that allows functional components to use state and other React features. useState is the most common hook, which returns an array with the current state value and a function to update that state.
 
-useState is called with a default value and returns an array with two elements: the current state value and a setter function to update that state. For example, `const [pizzaType, setPizzaType] = useState('pepperoni')` creates a state variable with an initial value of 'pepperoni'.
+`useState` is called with a default value and returns an array with two elements: the current state value and a setter function to update that state. For example, `const [pizzaType, setPizzaType] = useState('pepperoni')` creates a state variable with an initial value of 'pepperoni'.
 
 `const [pizzaType, setPizzaType] = useState("pepperoni")`
 AKA
@@ -33,3 +33,9 @@ What is the purpose of the onChange event handler in React form elements?
 The `onChange` event handler allows updating the component's state when a user interacts with a form element, triggering a re-render and ensuring the component's state reflects the user's input.
 
 Never use hooks in conditionals or loops! They depend on being called in the same order every time so they should always be at the top level.
+
+`useRef` is a React Hook that provides a way to create a mutable reference object that persists across component renders without causing a re-render when its value is updated.
+
+`useRef` returns a plain JavaScript object with a single property: `current`.
+The value assigned to `current` persists across component renders.
+Updating the `current` property of a ref does not trigger a re-render of the component, unlike updating state with `useState`
